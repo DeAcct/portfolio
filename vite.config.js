@@ -8,5 +8,6 @@ module.exports = {
         sub: resolve(__dirname, "sub/index.html"),
       },
     },
+    outDir: "../dist",
   },
 };
