@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&display=swap");
+@font-face {
+  font-family: "RixYeoljeongdo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body,
+div,
+main,
+section,
+article,
+details,
+summary,
+figure,
+figcaption,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+p,
+strong,
+b,
+em,
+i,
+dfn,
+span,
+img,
+label,
+input,
+form,
+legend,
+fieldset,
+select {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Noto Sans KR", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.625em;
+  color: var(--text-color-500);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+dfn,
+em,
+i {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-family: "RixYeoljeongdo";
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(1px 1px 1px 1px);
+  clip-path: inset(50%);
+}
+
+.svg-definitions {
+  display: none;
+}

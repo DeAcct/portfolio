@@ -1,119 +1,228 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공사중!</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;900&display=swap');
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: 'Noto Sans KR', sans-serif;
-            box-sizing: border-box;
-        }
-        body{
-            overflow: hidden;
-            width: 100vw;
-            height: 100vh;
-        }
-        .bg{
-            width: 100%;
-            height: 100%;
-            transition: 150ms ease-out;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .under-construction{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 60vw;
-            height: 60vw;
-            max-width: 768px;
-            max-height: 768px;
-            border-radius: 1em;
-            background-color:rgba(255,255,255,0.3);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-style: solid;
-            border-width: 0.03em;
-            border-top-color: rgba(255,255,255,0.5);
-            border-left-color: rgba(255,255,255,0.5);
-            border-right-color: rgba(255,255,255,0.1);
-            border-bottom-color: rgba(255,255,255,0.1);
-        }
-        h1{
-            font-size: 3em;
-            color: #222;
-        }
-        p{
-            margin-top: 0.5em;
-            font-size: 1.2em;
-            color:#222;
-            font-weight: 300;
-        }
-        button{
-            margin-top: 1.2em;
-            padding: 0.5em 1em;
-            font-size: 1.1em;
-            border-radius: 1.55em;
-            border:none;
-            background-color:rgba(255,255,255,0.5);
-            color:#222;
-            transition: 150ms ease-out;
-            cursor:pointer;
-            display: none;
-        }
-        button:hover{
-            background-color:#fff;
-        }
-        @media screen and (max-width:768px){
-            h1{
-                font-size: 2em;
-                transition: 500ms ease-out;
-            }
-            p{
-                margin-top: 0.7em;
-                font-size: 1em;
-                transition: 500ms ease-out;
-            }
-            button{
-                font-size: 0.7em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="bg">
-        <div class="under-construction">
-            <h1>디자인중...</h1>
-            <p>picture source by unsplash</p>
-            <button class="change">이미지 바꾸기</button>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이현성 포트폴리오!</title>
+  </head>
+  <body>
+    <svg viewBox="0 0 64 64" class="svg-definitions">
+      <path
+        id="identity"
+        d="M64,32c0,4-5.4,6.9-6.8,10.4c-1.5,3.6,0.2,9.5-2.6,12.2c-2.7,2.7-8.6,1.1-12.2,2.6
+        C38.9,58.6,36,64,32,64s-6.9-5.4-10.4-6.8c-3.6-1.5-9.5,0.2-12.2-2.6c-2.7-2.7-1.1-8.6-2.6-12.2C5.4,38.9,0,36,0,32
+        s5.4-6.9,6.8-10.4c1.5-3.6-0.2-9.5,2.6-12.2s8.6-1.1,12.2-2.6C25.1,5.4,28,0,32,0s6.9,5.4,10.4,6.8c3.6,1.5,9.5-0.2,12.2,2.6
+        c2.7,2.7,1.1,8.6,2.6,12.2C58.6,25.1,64,28,64,32z"
+      />
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        from="0 32 32"
+        to="360 32 32"
+        href="#identity"
+        dur="20s"
+        repeatCount="indefinite"
+      />
+    </svg>
+    <div id="App">
+      <header>
+        <div class="inner">
+          <div class="col-left">
+            <h1 class="logo">
+              <a href="./index.html">
+                <svg viewBox="0 0 64 64">
+                  <path
+                    class="logo-content"
+                    d="M5.21,43h0A5.21,5.21,0,0,1,0,37.77a4.89,4.89,0,0,1,.16-1.26L8.29,4A5.23,5.23,0,0,1,13.35,0h0a5.21,5.21,0,0,1,5.21,5.21,5.44,5.44,0,0,1-.15,1.27L10.27,39A5.22,5.22,0,0,1,5.21,43Z"
+                  />
+                  <path
+                    class="logo-content"
+                    d="M22.15,42.74h0a5.21,5.21,0,0,1-5.21-5.21,5.36,5.36,0,0,1,.15-1.26L19.86,25.2a5.21,5.21,0,0,1,5.05-3.95h0a5.22,5.22,0,0,1,5.22,5.21A5,5,0,0,1,30,27.73L27.21,38.79A5.22,5.22,0,0,1,22.15,42.74Z"
+                  />
+                  <path
+                    class="logo-content"
+                    d="M58.79,21h0A5.21,5.21,0,0,1,64,26.23a4.89,4.89,0,0,1-.16,1.26L55.7,60.05a5.21,5.21,0,0,1-5.05,4h0a5.22,5.22,0,0,1-5.22-5.21,5.46,5.46,0,0,1,.16-1.27L53.73,25A5.22,5.22,0,0,1,58.79,21Z"
+                  />
+                  <path
+                    class="logo-content"
+                    d="M41.85,21.25h0a5.21,5.21,0,0,1,5.21,5.21,5.38,5.38,0,0,1-.15,1.27L44.14,38.8a5.2,5.2,0,0,1-5.06,3.94h0a5.21,5.21,0,0,1-5.21-5.21A4.89,4.89,0,0,1,34,36.27L36.79,25.2A5.23,5.23,0,0,1,41.85,21.25Z"
+                  />
+                </svg>
+                <p class="logo-text">hyeon</p>
+                <p class="logo-text">seong</p>
+              </a>
+            </h1>
+            <nav class="navi">
+              <h2 class="blind">페이지 네비게이션</h2>
+              <ul class="navi-items">
+                <li class="navi-item">
+                  <svg viewBox="0 0 64 64">
+                    <use href="#identity" />
+                  </svg>
+                  <a href="#none">Profile</a>
+                </li>
+                <li class="navi-item">
+                  <svg viewBox="0 0 64 64">
+                    <use href="#identity" />
+                  </svg>
+                  <a href="#none">Works</a>
+                </li>
+                <li class="navi-item">
+                  <svg viewBox="0 0 64 64">
+                    <use href="#identity" />
+                  </svg>
+                  <a href="#none">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-right">
+            <label>
+              <input type="checkbox" />
+              <span>다크 모드</span>
+              <svg viewBox="0 0 64 64">
+                <path
+                  class="toggle-body"
+                  d="M22.36,20.83H50.75A11.25,11.25,0,0,1,62,32.08h0A11.25,11.25,0,0,1,50.75,43.33H22.36A11.24,11.24,0,0,1,11.11,32.08h0A11.25,11.25,0,0,1,22.36,20.83Z"
+                />
+                <path
+                  class="toggle-head"
+                  d="M43.46,32.08c0,2.73-3.64,4.72-4.62,7.09s.11,6.42-1.75,8.28-5.82.72-8.28,1.74-4.35,4.62-7.08,4.62S17,50.17,14.64,49.19s-6.42.11-8.28-1.74-.72-5.82-1.74-8.28S0,34.81,0,32.08,3.64,27.37,4.62,25s-.11-6.43,1.74-8.28S12.19,16,14.64,15s4.36-4.63,7.09-4.63S26.44,14,28.81,15s6.43-.11,8.28,1.74.72,5.82,1.75,8.28S43.46,29.35,43.46,32.08Z"
+                />
+              </svg>
+            </label>
+          </div>
         </div>
+      </header>
+      <div class="page-wrap">
+        <section class="visual">
+          <div class="text-content">
+            <h2>이현성 <dfn>톺아보기</dfn></h2>
+            <p>틈이 있는 곳마다 모조리 더듬어 살피다</p>
+          </div>
+          <figure class="hint-content">
+            <svg viewBox="0 0 64 64">
+              <path
+                class="hint-icon"
+                d="M32,64.1c-9.4,0-17.1-7.7-17.1-17.1V17.2c0-9.4,7.7-17.1,17.1-17.1c9.4,0,17.1,7.7,17.1,17.1V47
+	C49.1,56.4,41.4,64.1,32,64.1z M32,4.5c-7,0-12.7,5.7-12.7,12.7V47c0,7,5.7,12.7,12.7,12.7c7,0,12.7-5.7,12.7-12.7V17.2
+	C44.7,10.2,39,4.5,32,4.5z"
+              />
+              <path
+                class="hint-icon"
+                d="M32,8.3L32,8.3c4.9,0,8.9,4,8.9,8.9v13.4c0,4.9-4,8.9-8.9,8.9l0,0c-4.9,0-8.9-4-8.9-8.9V17.2
+	C23.1,12.3,27.1,8.3,32,8.3z"
+              />
+            </svg>
+            <figcaption>마우스로 스크롤하여 탐색하기</figcaption>
+          </figure>
+          <div class="bg">
+            <div class="pink-star">
+              <svg viewBox="0 0 64 64">
+                <use href="#identity" />
+              </svg>
+            </div>
+            <div class="blue-dot pc"></div>
+            <div class="purple-dot pc"></div>
+            <div class="yellow-dot pc"></div>
+          </div>
+        </section>
+        <div class="linker"></div>
+        <main>
+          <section class="profile main-contents">
+            <h2 class="title">Profile</h2>
+            <div class="profile-wrap">
+              <div class="col-left">
+                <div class="name-card card">
+                  <div>
+                    <h3>이현성</h3>
+                    <p>예비 웹 퍼블리셔</p>
+                  </div>
+                  <img />
+                </div>
+                <div class="icon-card card">
+                  <div>
+                    <h3>학력</h3>
+                    <p>
+                      <span class="line-break">선린인터넷고등학교</span>
+                      <span class="line-break">멀티미디어학과</span>
+                    </p>
+                  </div>
+                  <img />
+                </div>
+                <div class="icon-card card">
+                  <div>
+                    <h3>취미</h3>
+                    <p>
+                      <span class="line-break">애니메이션</span>
+                      <span class="line-break">웹사이트 클론코딩</span>
+                    </p>
+                  </div>
+                  <img />
+                </div>
+              </div>
+              <div class="col-right">
+                <div class="stack-card">
+                  <h3>스택</h3>
+                  <ul class="stacks">
+                    <li class="stack">
+                      <strong>Design</strong>
+                      <div>
+                        <p class="level">상</p>
+                        <i class="icon">
+                          <img />
+                        </i>
+                      </div>
+                    </li>
+                    <li class="stack">
+                      <strong>HTML5</strong>
+                      <div>
+                        <p class="level">상</p>
+                        <i class="icon">
+                          <img />
+                        </i>
+                      </div>
+                    </li>
+                    <li class="stack">
+                      <strong>CSS3</strong>
+                      <div>
+                        <p class="level">상</p>
+                        <i class="icon">
+                          <img />
+                        </i>
+                      </div>
+                    </li>
+                    <li class="stack">
+                      <strong>JavaScript ES6+</strong>
+                      <div>
+                        <p class="level">중</p>
+                        <i class="icon">
+                          <img />
+                        </i>
+                      </div>
+                    </li>
+                    <li class="stack">
+                      <strong>jQuery</strong>
+                      <div>
+                        <p class="level">중</p>
+                        <i class="icon">
+                          <img />
+                        </i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="works main-contents">
+            <h2 class="title">Works</h2>
+          </section>
+        </main>
+      </div>
     </div>
-    <script>
-        let image;
-        const innerWidth = window.innerWidth;
-        const innerHeight = window.innerHeight;
-        const $bg = document.body.querySelector('.bg');
-        const $underConst = document.body.querySelector('.under-construction');
-        const $change = document.body.querySelector('.change');
-        const myFetch = async () => {
-            let response = await fetch(`https://source.unsplash.com/random/${innerWidth}x${innerHeight}/?landscape`);
-            let blob = await response.blob();
-
-            let objectURL = URL.createObjectURL(blob);
-            $bg.style.background = `url(${objectURL}) no-repeat center/cover`;
-            $change.style.display = 'block';
-        }
-        myFetch().catch(error => {
-            console.error('불러오기 과정에서 다음과 같은 오류가 발생했습니다.' + error.message)
-        })
-        $change.addEventListener('click', myFetch);
-    </script>
-</body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
