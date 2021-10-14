@@ -1,0 +1,66 @@
+.navi {
+  position: fixed;
+  top: -12.6rem;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  z-index: 50;
+  width: calc(100% - 2 * var(--inner-size));
+  border-radius: 1.5rem;
+  padding: 1.5rem 3rem;
+  background-color: var(--depth-300);
+  .navi-items {
+    display: flex;
+    justify-content: space-between;
+    .navi-item {
+      min-width: 30%;
+      font-size: 1.5rem;
+      border-radius: 2.05rem;
+      transition: background-color 150ms ease-out;
+      &--current {
+        background-color: var(--theme-misty-yellow);
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+      }
+    }
+  }
+  .darkmode-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1rem solid var(--depth-500);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    span {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+    }
+    .toggle-icon {
+      width: 4.8rem;
+      .toggle-body {
+        fill: transparent;
+        stroke: currentColor;
+        stroke-width: 0.4rem;
+        transition: 150ms ease-out;
+      }
+      .toggle-head {
+        fill: var(--text-color-500);
+      }
+    }
+
+    .skell-toggle:checked ~ .toggle-icon {
+      color: var(--theme-misty-yellow);
+      .toggle-body {
+        fill: var(--theme-misty-yellow);
+      }
+      .toggle-head {
+        transform: translateX(2.5rem);
+      }
+    }
+  }
+}

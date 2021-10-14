@@ -1,13 +1,5 @@
-const { resolve } = require("path");
-
-module.exports = {
+export default {
   build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        sub: resolve(__dirname, "sub/index.html"),
-      },
-    },
-    outDir: "../dist",
+    outDir: "docs",
   },
 };

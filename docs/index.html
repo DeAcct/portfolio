@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이현성 포트폴리오!</title>
-    <script type="module" crossorigin src="/assets/main.8346ba03.js"></script>
-    <link rel="modulepreload" href="/assets/color.1945fdb7.js">
-    <link rel="stylesheet" href="/assets/color.33f0d99c.css">
+    <title>Portfolio</title>
+    <script type="module" crossorigin src="/assets/index.d4844e65.js"></script>
+    <link rel="stylesheet" href="/assets/index.3b6b3f14.css">
   </head>
   <body>
     <svg viewBox="0 0 64 64" class="svg-definitions">
@@ -18,16 +17,6 @@
         s5.4-6.9,6.8-10.4c1.5-3.6-0.2-9.5,2.6-12.2s8.6-1.1,12.2-2.6C25.1,5.4,28,0,32,0s6.9,5.4,10.4,6.8c3.6,1.5,9.5-0.2,12.2,2.6
         c2.7,2.7,1.1,8.6,2.6,12.2C58.6,25.1,64,28,64,32z"
       />
-      <animateTransform
-        attributeName="transform"
-        attributeType="XML"
-        type="rotate"
-        from="0 32 32"
-        to="360 32 32"
-        href="#identity"
-        dur="20s"
-        repeatCount="indefinite"
-      />
     </svg>
     <div id="App">
       <header>
@@ -35,7 +24,7 @@
           <div class="col-left">
             <h1 class="logo">
               <a href="./index.html">
-                <svg viewBox="0 0 64 64">
+                <svg viewBox="0 0 64 64" class="logo-mark">
                   <path
                     class="logo-content"
                     d="M5.21,43h0A5.21,5.21,0,0,1,0,37.77a4.89,4.89,0,0,1,.16-1.26L8.29,4A5.23,5.23,0,0,1,13.35,0h0a5.21,5.21,0,0,1,5.21,5.21,5.44,5.44,0,0,1-.15,1.27L10.27,39A5.22,5.22,0,0,1,5.21,43Z"
@@ -53,59 +42,70 @@
                     d="M41.85,21.25h0a5.21,5.21,0,0,1,5.21,5.21,5.38,5.38,0,0,1-.15,1.27L44.14,38.8a5.2,5.2,0,0,1-5.06,3.94h0a5.21,5.21,0,0,1-5.21-5.21A4.89,4.89,0,0,1,34,36.27L36.79,25.2A5.23,5.23,0,0,1,41.85,21.25Z"
                   />
                 </svg>
-                <p class="logo-text">hyeon</p>
-                <p class="logo-text">seong</p>
+                <div class="logo-text">
+                  <p>hyeon</p>
+                  <p>seong</p>
+                </div>
               </a>
             </h1>
             <nav class="navi">
-              <h2 class="blind">페이지 네비게이션</h2>
+              <h2 class="blind">네비게이션</h2>
               <ul class="navi-items">
-                <li class="navi-item">
-                  <svg viewBox="0 0 64 64">
+                <li class="navi-item navi-item--current">
+                  <svg viewBox="0 0 64 64" class="pc">
                     <use href="#identity" />
                   </svg>
-                  <a href="#none">Profile</a>
+                  <a href="#profile">Profile</a>
                 </li>
                 <li class="navi-item">
-                  <svg viewBox="0 0 64 64">
+                  <svg viewBox="0 0 64 64" class="pc">
                     <use href="#identity" />
                   </svg>
-                  <a href="#none">Works</a>
+                  <a href="#works">Works</a>
                 </li>
                 <li class="navi-item">
-                  <svg viewBox="0 0 64 64">
+                  <svg viewBox="0 0 64 64" class="pc">
                     <use href="#identity" />
                   </svg>
-                  <a href="#none">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
+              <label class="darkmode-toggle">
+                <input type="checkbox" class="blind skell-toggle" />
+                <span>다크 모드</span>
+                <svg viewBox="0 0 78 48" class="toggle-icon">
+                  <path
+                    class="a"
+                    d="M48,24c0,3-4,5.21-5.1,7.83S43,38.92,41,41s-6.42.8-9.14,1.93S27,48,24,48s-5.22-4-7.83-5.1S9.08,43,7,41s-.79-6.43-1.92-9.15S0,27,0,24s4-5.21,5.1-7.82S5,9.06,7,7s6.44-.8,9.15-1.9S21,0,24,0s5.2,4,7.82,5.12S38.92,5,41,7s.8,6.43,1.94,9.15S48,21,48,24Z"
+                  />
+                  <rect
+                    class="b"
+                    x="20"
+                    y="10"
+                    width="56"
+                    height="28"
+                    rx="14"
+                  />
+                </svg>
+              </label>
             </nav>
           </div>
           <div class="col-right">
-            <label>
-              <input type="checkbox" />
-              <span>다크 모드</span>
-              <svg viewBox="0 0 64 64">
-                <path
-                  class="toggle-body"
-                  d="M22.36,20.83H50.75A11.25,11.25,0,0,1,62,32.08h0A11.25,11.25,0,0,1,50.75,43.33H22.36A11.24,11.24,0,0,1,11.11,32.08h0A11.25,11.25,0,0,1,22.36,20.83Z"
-                />
-                <path
-                  class="toggle-head"
-                  d="M43.46,32.08c0,2.73-3.64,4.72-4.62,7.09s.11,6.42-1.75,8.28-5.82.72-8.28,1.74-4.35,4.62-7.08,4.62S17,50.17,14.64,49.19s-6.42.11-8.28-1.74-.72-5.82-1.74-8.28S0,34.81,0,32.08,3.64,27.37,4.62,25s-.11-6.43,1.74-8.28S12.19,16,14.64,15s4.36-4.63,7.09-4.63S26.44,14,28.81,15s6.43-.11,8.28,1.74.72,5.82,1.75,8.28S43.46,29.35,43.46,32.08Z"
-                />
-              </svg>
-            </label>
+            <button class="navi-open-btn" title="네비게이션 열기">
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
           </div>
         </div>
       </header>
       <div class="page-wrap">
-        <section class="visual">
+        <section class="visual inner">
           <div class="text-content">
-            <h2>이현성 <dfn>톺아보기</dfn></h2>
-            <p>틈이 있는 곳마다 모조리 더듬어 살피다</p>
+            <b class="sub-title">Portfolio</b>
+            <h2 class="main-title">이현성 <dfn>톺아보기</dfn></h2>
+            <p class="copy">틈이 있는 곳마다 모조리 더듬어 살피다</p>
           </div>
-          <figure class="hint-content">
+          <figure class="hint-content pc">
             <svg viewBox="0 0 64 64">
               <path
                 class="hint-icon"
@@ -121,20 +121,24 @@
             </svg>
             <figcaption>마우스로 스크롤하여 탐색하기</figcaption>
           </figure>
-          <div class="bg">
-            <div class="pink-star">
+          <div class="bg pc">
+            <div class="pink-star identity-shape">
               <svg viewBox="0 0 64 64">
                 <use href="#identity" />
               </svg>
             </div>
-            <div class="blue-dot pc"></div>
-            <div class="purple-dot pc"></div>
-            <div class="yellow-dot pc"></div>
+            <div class="blue-dot identity-shape"></div>
+            <div class="purple-dot identity-shape"></div>
+            <div class="yellow-dot identity-shape"></div>
           </div>
+          <svg viewBox="0 0 1080 84.5" class="wave">
+            <path
+              d="M1080,0c-45,0-45,80-90,80S945,0,900,0s-45,80-90,80S765,0,720,0s-45,80-90,80S585,0,540,0s-45,80-90,80S405,0,360,0s-45,80-90,80S225,0,180,0,135,80,90,80,45,0,0,0H0V84.5H1080Z"
+            />
+          </svg>
         </section>
-        <div class="linker"></div>
-        <main>
-          <section class="profile main-contents">
+        <main class="inner">
+          <section class="profile main-contents" id="profile">
             <h2 class="title">Profile</h2>
             <div class="profile-wrap">
               <div class="col-left">
@@ -143,7 +147,6 @@
                     <h3>이현성</h3>
                     <p>예비 웹 퍼블리셔</p>
                   </div>
-                  <img />
                 </div>
                 <div class="icon-card card">
                   <div>
@@ -153,7 +156,6 @@
                       <span class="line-break">멀티미디어학과</span>
                     </p>
                   </div>
-                  <img />
                 </div>
                 <div class="icon-card card">
                   <div>
@@ -163,7 +165,6 @@
                       <span class="line-break">웹사이트 클론코딩</span>
                     </p>
                   </div>
-                  <img />
                 </div>
               </div>
               <div class="col-right">
@@ -174,45 +175,35 @@
                       <strong>Design</strong>
                       <div>
                         <p class="level">상</p>
-                        <i class="icon">
-                          <img />
-                        </i>
+                        <i class="icon"> </i>
                       </div>
                     </li>
                     <li class="stack">
                       <strong>HTML5</strong>
                       <div>
                         <p class="level">상</p>
-                        <i class="icon">
-                          <img />
-                        </i>
+                        <i class="icon"> </i>
                       </div>
                     </li>
                     <li class="stack">
                       <strong>CSS3</strong>
                       <div>
                         <p class="level">상</p>
-                        <i class="icon">
-                          <img />
-                        </i>
+                        <i class="icon"> </i>
                       </div>
                     </li>
                     <li class="stack">
                       <strong>JavaScript ES6+</strong>
                       <div>
                         <p class="level">중</p>
-                        <i class="icon">
-                          <img />
-                        </i>
+                        <i class="icon"> </i>
                       </div>
                     </li>
                     <li class="stack">
                       <strong>jQuery</strong>
                       <div>
                         <p class="level">중</p>
-                        <i class="icon">
-                          <img />
-                        </i>
+                        <i class="icon"> </i>
                       </div>
                     </li>
                   </ul>
@@ -220,10 +211,160 @@
               </div>
             </div>
           </section>
-          <section class="works main-contents">
+          <section class="works main-contents" id="works">
             <h2 class="title">Works</h2>
+            <div class="work-slide">
+              <div class="work-slide-indi">
+                <button class="work-slide-dot work-slide-dot--selected">
+                  <span class="blind">작품1</span>
+                </button>
+                <button class="work-slide-dot">
+                  <span class="blind">작품2</span>
+                </button>
+                <button class="work-slide-dot">
+                  <span class="blind">작품3</span>
+                </button>
+                <button class="work-slide-dot">
+                  <span class="blind">작품4</span>
+                </button>
+                <button class="work-slide-dot">
+                  <span class="blind">작품5</span>
+                </button>
+                <button class="work-slide-dot">
+                  <span class="blind">작품6</span>
+                </button>
+              </div>
+              <ul class="work-slide-items">
+                <li class="work-slide-item">
+                  <img alt="서울미래유산" class="work-slide-img" />
+                  <strong class="work-slide-kind">Web Publishing</strong>
+                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <p class="work-slide-desc">
+                    jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
+                    사이트
+                  </p>
+                  <a
+                    href="https://deacct.github.io/seoulFutureHeritage"
+                    class="goto-btn"
+                  >
+                    보러가기
+                  </a>
+                </li>
+                <li class="work-slide-item">
+                  <img alt="서울미래유산" class="work-slide-img" />
+                  <strong class="work-slide-kind">Web Publishing</strong>
+                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <p class="work-slide-desc">
+                    jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
+                    사이트
+                  </p>
+                  <a
+                    href="https://deacct.github.io/seoulFutureHeritage"
+                    class="goto-btn"
+                  >
+                    보러가기
+                  </a>
+                </li>
+                <li class="work-slide-item">
+                  <img alt="서울미래유산" class="work-slide-img" />
+                  <strong class="work-slide-kind">Web Publishing</strong>
+                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <p class="work-slide-desc">
+                    jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
+                    사이트
+                  </p>
+                  <a
+                    href="https://deacct.github.io/seoulFutureHeritage"
+                    class="goto-btn"
+                  >
+                    보러가기
+                  </a>
+                </li>
+                <li class="work-slide-item">
+                  <img alt="서울미래유산" class="work-slide-img" />
+                  <strong class="work-slide-kind">Web Publishing</strong>
+                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <p class="work-slide-desc">
+                    jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
+                    사이트
+                  </p>
+                  <a
+                    href="https://deacct.github.io/seoulFutureHeritage"
+                    class="goto-btn"
+                  >
+                    보러가기
+                  </a>
+                </li>
+                <li class="work-slide-item">
+                  <img alt="서울미래유산" class="work-slide-img" />
+                  <strong class="work-slide-kind">Web Publishing</strong>
+                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <p class="work-slide-desc">
+                    jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
+                    사이트
+                  </p>
+                  <a
+                    href="https://deacct.github.io/seoulFutureHeritage"
+                    class="goto-btn"
+                  >
+                    보러가기
+                  </a>
+                </li>
+                <li class="work-slide-item">
+                  <img alt="서울미래유산" class="work-slide-img" />
+                  <strong class="work-slide-kind">Web Publishing</strong>
+                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <p class="work-slide-desc">
+                    jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
+                    사이트
+                  </p>
+                  <a
+                    href="https://deacct.github.io/seoulFutureHeritage"
+                    class="goto-btn"
+                  >
+                    보러가기
+                  </a>
+                </li>
+              </ul>
+              <div class="work-slide-controller">
+                <button class="work-slide-prev">
+                  <span class="blind">이전 작업물</span>
+                </button>
+                <button class="work-slide-prev">
+                  <span class="blind">다음 작업물</span>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="contact main-contents" id="contact">
+            <ul class="contact-links">
+              <li class="contact-link">
+                <address>
+                  <strong class="portal-name">NAVER</strong>
+                  <a href="mailto:isac1117@naver.com">
+                    isac1117&commat;naver.com
+                  </a>
+                </address>
+              </li>
+              <li class="contact-link">
+                <address>
+                  <strong class="portal-name">GMAIL</strong>
+                  <a href="mailto:dynamic1117@gmail.com">
+                    dynamic1117&commat;gmail.com
+                  </a>
+                </address>
+              </li>
+            </ul>
           </section>
         </main>
+        <footer class="inner">
+          <h2>Thank You!</h2>
+          <p>&copy; 이현성 2021</p>
+          <p>이 웹사이트는 상업적 목적이 아닙니다.</p>
+          <button class="to-top-btn">
+            <span class="blind">맨 처음으로 돌아가기</span>
+          </button>
+        </footer>
       </div>
     </div>
     
