@@ -1,5 +1,15 @@
 @use "./profile";
 
 main {
-  background-color: var(--main-bg);
+  background-color: var(--main-depth-100);
+  padding-top: 8rem;
+  .title {
+    font-family: "GongGothicBold";
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-left: var(--inner-size);
+  }
+  .main-contents:not(:first-child) {
+    margin-top: 6rem;
+  }
 }

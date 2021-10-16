@@ -99,7 +99,13 @@ img {
   display: none;
 }
 .inner {
-  padding: 0 var(--inner-size);
+  padding: {
+    left: var(--inner-size);
+    right: var(--inner-size);
+  }
+}
+.line-break {
+  display: block;
 }
 .pc {
   display: none;

@@ -12,18 +12,17 @@
   --depth-300: hsl(240, 17%, 84%);
   --depth-500: hsl(240, 17%, 74%);
 
-  --visual-bg: var(--depth-300);
-  --main-bg: var(--theme-misty-pink);
+  --main-depth-100: var(--theme-misty-pink);
+  --main-depth-300: hsl(0, 74%, 85%);
 }
 
 [data-theme="dark"] {
-  --text-color-100: hsl(240, 17%, 94%);
+  --text-color-100: hsl(240, 17%, 90%);
   --text-color-300: hsl(240, 17%, 84%);
   --text-color-500: hsl(240, 17%, 74%);
 
-  --depth-500: hsl(240, 10%, 40%);
-  --depth-700: hsl(240, 13%, 26%);
+  --depth-100: hsl(240, 10%, 40%);
+  --depth-300: hsl(240, 13%, 26%);
 
-  --visual-bg: var(--depth-500);
-  --main-bg: var(--depth-700);
+  --main-depth-100: var(--depth-300);
 }
