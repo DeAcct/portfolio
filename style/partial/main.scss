@@ -1,13 +1,20 @@
-@use "./profile";
-
+@use "profile";
+@use "works";
+@use "contact";
 main {
   background-color: var(--main-depth-100);
   padding-top: 8rem;
   .title {
     font-family: "GongGothicBold";
     font-size: 2rem;
-    margin-bottom: 2rem;
-    padding-left: var(--inner-size);
+    position: sticky;
+    z-index: 50;
+    top: 9.6rem;
+    padding: {
+      top: 2rem;
+      bottom: 2rem;
+    }
+    background-color: var(--main-depth-100);
   }
   .main-contents:not(:first-child) {
     margin-top: 6rem;

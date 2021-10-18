@@ -17,11 +17,11 @@
       />
     </svg>
     <div id="App">
-      <header>
+      <header class="header">
         <div class="inner">
           <div class="col-left">
             <h1 class="logo">
-              <a href="./index.html">
+              <a href="#">
                 <svg viewBox="0 0 64 64" class="logo-mark">
                   <path
                     class="logo-content"
@@ -137,7 +137,7 @@
         </section>
         <main>
           <section class="profile main-contents" id="profile">
-            <h2 class="title">프로필</h2>
+            <h2 class="title inner">프로필</h2>
             <div class="profile-wrap">
               <div class="col-left">
                 <div class="card">
@@ -153,19 +153,15 @@
                 <div class="card">
                   <div class="text-area">
                     <h3>학력</h3>
-                    <p>
-                      <span class="line-break">선린인터넷고등학교</span>
-                      <span class="line-break">멀티미디어학과</span>
-                    </p>
+                    <p>선린인터넷고등학교</p>
+                    <p>멀티미디어학과</p>
                   </div>
                 </div>
                 <div class="card">
                   <div class="text-area">
                     <h3>취미</h3>
-                    <p>
-                      <span class="line-break">애니메이션</span>
-                      <span class="line-break">웹사이트 클론코딩</span>
-                    </p>
+                    <p class="line-break">애니메이션</p>
+                    <p class="line-break">웹사이트 클론코딩</p>
                   </div>
                 </div>
               </div>
@@ -178,7 +174,20 @@
                         <strong>Design</strong>
                         <p class="level">상</p>
                       </div>
-                      <i class="icon"> <img /></i>
+                      <i class="icon design-stack">
+                        <div class="design-stack-track">
+                          <div class="design-stack-chunk">
+                            <div class="ai design-stack-item">Ai</div>
+                            <div class="ps design-stack-item">Ps</div>
+                            <div class="xd design-stack-item">XD</div>
+                          </div>
+                          <div class="design-stack-chunk">
+                            <div class="ai design-stack-item">Ai</div>
+                            <div class="ps design-stack-item">Ps</div>
+                            <div class="xd design-stack-item">XD</div>
+                          </div>
+                        </div>
+                      </i>
                     </li>
                     <li class="stack">
                       <div class="text-area">
@@ -189,14 +198,21 @@
                     </li>
                     <li class="stack">
                       <div class="text-area">
-                        <strong>CSS3</strong>
+                        <strong>CSS</strong>
                         <p class="level">상</p>
                       </div>
                       <i class="icon"> <img /></i>
                     </li>
                     <li class="stack">
                       <div class="text-area">
-                        <strong>JavaScript ES6+</strong>
+                        <strong>SASS</strong>
+                        <p class="level">상</p>
+                      </div>
+                      <i class="icon"> <img /></i>
+                    </li>
+                    <li class="stack">
+                      <div class="text-area">
+                        <strong>JavaScript</strong>
                         <p class="level">중</p>
                       </div>
                       <i class="icon"> <img /></i>
@@ -214,133 +230,111 @@
             </div>
           </section>
           <section class="works main-contents" id="works">
-            <h2 class="title">작업물</h2>
-            <div class="work-slide">
+            <h2 class="title inner">작업물</h2>
+            <div class="work-slide inner">
               <div class="work-slide-indi">
-                <button class="work-slide-dot work-slide-dot--selected">
-                  <span class="blind">작품1</span>
-                </button>
-                <button class="work-slide-dot">
-                  <span class="blind">작품2</span>
-                </button>
-                <button class="work-slide-dot">
-                  <span class="blind">작품3</span>
-                </button>
-                <button class="work-slide-dot">
-                  <span class="blind">작품4</span>
-                </button>
-                <button class="work-slide-dot">
-                  <span class="blind">작품5</span>
-                </button>
-                <button class="work-slide-dot">
-                  <span class="blind">작품6</span>
-                </button>
+                <div
+                  class="work-slide-indi-track"
+                  title="작업물 슬라이드 진행바"
+                  role="progressbar"
+                  aria-valuemin="1"
+                  aria-valuenow="1"
+                  aria-valuemax="6"
+                >
+                  <div class="work-slide-indi-progress"></div>
+                </div>
+                <div class="work-slide-indi-num">
+                  <strong class="current">1</strong>/6
+                </div>
               </div>
               <ul class="work-slide-items">
                 <li class="work-slide-item">
-                  <img alt="서울미래유산" class="work-slide-img" />
-                  <strong class="work-slide-kind">Web Publishing</strong>
-                  <h3 class="work-slide-title">서울미래유산 리디자인</h3>
+                  <div alt="서울미래유산" class="work-slide-img"></div>
+                  <h3 class="work-slide-title">
+                    <p>서울미래유산</p>
+                    <p>리디자인</p>
+                  </h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
                     사이트
                   </p>
-                  <a
-                    href="https://deacct.github.io/seoulFutureHeritage"
-                    class="goto-btn"
-                  >
-                    보러가기
-                  </a>
                 </li>
                 <li class="work-slide-item">
                   <img alt="서울미래유산" class="work-slide-img" />
-                  <strong class="work-slide-kind">Web Publishing</strong>
                   <h3 class="work-slide-title">서울미래유산 리디자인</h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
                     사이트
                   </p>
-                  <a
-                    href="https://deacct.github.io/seoulFutureHeritage"
-                    class="goto-btn"
-                  >
-                    보러가기
-                  </a>
                 </li>
                 <li class="work-slide-item">
                   <img alt="서울미래유산" class="work-slide-img" />
-                  <strong class="work-slide-kind">Web Publishing</strong>
                   <h3 class="work-slide-title">서울미래유산 리디자인</h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
                     사이트
                   </p>
-                  <a
-                    href="https://deacct.github.io/seoulFutureHeritage"
-                    class="goto-btn"
-                  >
-                    보러가기
-                  </a>
                 </li>
                 <li class="work-slide-item">
                   <img alt="서울미래유산" class="work-slide-img" />
-                  <strong class="work-slide-kind">Web Publishing</strong>
                   <h3 class="work-slide-title">서울미래유산 리디자인</h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
                     사이트
                   </p>
-                  <a
-                    href="https://deacct.github.io/seoulFutureHeritage"
-                    class="goto-btn"
-                  >
-                    보러가기
-                  </a>
                 </li>
                 <li class="work-slide-item">
                   <img alt="서울미래유산" class="work-slide-img" />
-                  <strong class="work-slide-kind">Web Publishing</strong>
                   <h3 class="work-slide-title">서울미래유산 리디자인</h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
                     사이트
                   </p>
-                  <a
-                    href="https://deacct.github.io/seoulFutureHeritage"
-                    class="goto-btn"
-                  >
-                    보러가기
-                  </a>
                 </li>
                 <li class="work-slide-item">
                   <img alt="서울미래유산" class="work-slide-img" />
-                  <strong class="work-slide-kind">Web Publishing</strong>
                   <h3 class="work-slide-title">서울미래유산 리디자인</h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
                     사이트
                   </p>
-                  <a
-                    href="https://deacct.github.io/seoulFutureHeritage"
-                    class="goto-btn"
-                  >
-                    보러가기
-                  </a>
                 </li>
               </ul>
               <div class="work-slide-controller">
-                <button class="work-slide-prev">
-                  <span class="blind">이전 작업물</span>
-                </button>
-                <button class="work-slide-prev">
-                  <span class="blind">다음 작업물</span>
-                </button>
+                <a
+                  href="https://deacct.github.io/seoulFutureHeritage"
+                  class="goto-btn"
+                >
+                  자세히 보기
+                </a>
+                <div class="col-right">
+                  <button class="work-slide-btn">
+                    <i class="icon">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M15,22a1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.42L7.41,12l8.3-8.29a1,1,0,1,0-1.42-1.42l-9,9a1,1,0,0,0,0,1.42l9,9A1,1,0,0,0,15,22Z"
+                        />
+                      </svg>
+                    </i>
+                    <span class="blind">이전 작업물</span>
+                  </button>
+                  <button class="work-slide-btn">
+                    <i class="icon">
+                      <svg viewBox="0 0 24 24">
+                        <path
+                          d="M9,22a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L16.59,12,8.29,3.71A1,1,0,0,1,9.71,2.29l9,9a1,1,0,0,1,0,1.42l-9,9A1,1,0,0,1,9,22Z"
+                        />
+                      </svg>
+                    </i>
+                    <span class="blind">다음 작업물</span>
+                  </button>
+                </div>
               </div>
             </div>
           </section>
           <section class="contact main-contents" id="contact">
-            <h2 class="title">연락처</h2>
-            <ul class="contact-links">
+            <h2 class="title inner">연락처</h2>
+            <ul class="contact-links inner">
               <li class="contact-link">
                 <address>
                   <strong class="portal-name">NAVER</strong>

@@ -1,0 +1,93 @@
+.work-slide {
+  .work-slide-indi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .work-slide-indi-track {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      margin-right: 1rem;
+      border-radius: 0.2rem;
+      height: 0.4rem;
+      background-color: var(--text-color-500);
+      .work-slide-indi-progress {
+        width: 16.667%;
+        height: 2rem;
+        border-radius: 1rem;
+        background-color: var(--theme-misty-yellow);
+      }
+    }
+    .work-slide-indi-num {
+      font-size: 1.8rem;
+      font-weight: 700;
+      .current {
+        font-weight: 900;
+        color: var(--theme-misty-yellow);
+        font-size: 6rem;
+      }
+    }
+  }
+  .work-slide-items {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    .work-slide-item {
+      position: absolute;
+      .work-slide-img {
+        width: 10.4rem;
+        height: 10.4rem;
+        margin-bottom: 1.5rem;
+      }
+      .work-slide-title {
+        font-family: "GongGothicBold";
+        font-size: 4rem;
+        transform: skewY(-7deg);
+        margin-bottom: 2.5rem;
+      }
+      .work-slide-desc {
+        font-size: 1.2rem;
+      }
+
+      //슬라이드 개발 완료시 제거
+      &:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+  .work-slide-controller {
+    display: flex;
+    justify-content: space-between;
+    .goto-btn {
+      display: flex;
+      align-items: center;
+      padding: 0 3rem;
+      height: 4.8rem;
+      font-size: 1.5rem;
+      background-color: var(--theme-misty-yellow);
+      border-radius: 3rem;
+    }
+    .col-right {
+      display: flex;
+      .work-slide-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        background-color: var(--text-color-500);
+        color: var(--depth-100);
+        &:last-child {
+          margin-left: 1rem;
+        }
+        .icon {
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+      }
+    }
+  }
+}
