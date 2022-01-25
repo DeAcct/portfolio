@@ -4,7 +4,7 @@
   "homepage": "https://portfolio.hyse.kr",
   "scripts": {
     "dev": "vite",
-    "predeploy": "tsc && vite build && echo portfolio.hyse.kr > ./docs/CNAME && echo CNAME created (portfolio.hyse.kr)",
+    "predeploy": "tsc && vite build && echo portfolio.hyse.kr > ./build/CNAME && echo CNAME created (portfolio.hyse.kr)",
     "deploy": "gh-pages -d build",
     "preview": "vite preview"
   },
