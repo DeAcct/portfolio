@@ -46,6 +46,10 @@ legend,
 fieldset,
 select {
   margin: 0;
+  margin-block: unset;
+  margin-inline: unset;
+  padding-block: unset;
+  padding-inline: unset;
   padding: 0;
   box-sizing: border-box;
   outline: none;
@@ -112,6 +116,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.line-break {
+  display: block;
 }
 
 :root {

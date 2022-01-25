@@ -22,9 +22,10 @@
     }
     .logo-text {
       position: absolute;
+      display: block;
       top: 50%;
       transform: translate(0, -50%);
-      p {
+      span {
         font-weight: 900;
         font-size: 1.3rem;
         transition: transform 300ms ease-out;

@@ -1,10 +1,9 @@
 .design-stack {
-  background-color: #330000;
-  animation: 5s linear infinite design-stack-color;
+  border-radius: 1.2rem;
+  overflow: hidden;
   .design-stack-track {
     width: 100%;
     height: 300%;
-    overflow: hidden;
     .design-stack-chunk {
       animation: 5s linear infinite design-stack-move;
     }
@@ -12,17 +11,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 0.5rem;
+      border-radius: 1.2rem;
       width: 100%;
       height: 5.6rem;
       font-size: 2.8rem;
       font-weight: 900;
       &.ai {
+        background-color: #330000;
         color: #fb9700;
       }
       &.ps {
+        background-color: #001e36;
         color: #31a7fe;
       }
       &.xd {
+        background-color: #470137;
         color: #f975fd;
       }
     }
@@ -30,7 +34,7 @@
 }
 @keyframes design-stack-move {
   to {
-    transform: translateY(-16.8rem);
+    transform: translateY(-18.3rem);
   }
 }
 @keyframes design-stack-color {

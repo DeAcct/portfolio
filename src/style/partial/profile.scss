@@ -33,7 +33,7 @@
   }
   .col-right {
     h3 {
-      margin-bottom: 5rem;
+      margin-bottom: 3.5rem;
     }
     strong {
       font-size: 1.5rem;
@@ -44,6 +44,7 @@
       align-items: center;
       .text-area {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         flex: 1;
       }
@@ -53,7 +54,6 @@
         margin-left: 2rem;
 
         /*임시, 실제 이미지 들어가면 제거 요망*/
-        border-radius: 1.2rem;
         overflow: hidden;
       }
 

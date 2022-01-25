@@ -40,10 +40,10 @@
                     d="M41.85,21.25h0a5.21,5.21,0,0,1,5.21,5.21,5.38,5.38,0,0,1-.15,1.27L44.14,38.8a5.2,5.2,0,0,1-5.06,3.94h0a5.21,5.21,0,0,1-5.21-5.21A4.89,4.89,0,0,1,34,36.27L36.79,25.2A5.23,5.23,0,0,1,41.85,21.25Z"
                   />
                 </svg>
-                <div class="logo-text">
-                  <p>hyeon</p>
-                  <p>seong</p>
-                </div>
+                <span class="logo-text">
+                  <span class="line-break">hyeon</span>
+                  <span class="line-break">seong</span>
+                </span>
               </a>
             </h1>
             <nav class="navi">
@@ -146,7 +146,7 @@
                     <p>예비 웹 퍼블리셔</p>
                   </div>
                   <img
-                    src="./assets/profile-face-picture.jpg"
+                    src="./src/assets/profile-face-picture.jpg"
                     alt="이현성 프로필 사진"
                   />
                 </div>
@@ -174,7 +174,7 @@
                         <strong>Design</strong>
                         <p class="level">상</p>
                       </div>
-                      <i class="icon design-stack">
+                      <div class="icon design-stack">
                         <div class="design-stack-track">
                           <div class="design-stack-chunk">
                             <div class="ai design-stack-item">Ai</div>
@@ -187,7 +187,7 @@
                             <div class="xd design-stack-item">XD</div>
                           </div>
                         </div>
-                      </i>
+                      </div>
                     </li>
                     <li class="stack">
                       <div class="text-area">
@@ -251,8 +251,8 @@
                 <li class="work-slide-item">
                   <div alt="서울미래유산" class="work-slide-img"></div>
                   <h3 class="work-slide-title">
-                    <p>서울미래유산</p>
-                    <p>리디자인</p>
+                    <span class="line-break">서울미래유산</span>
+                    <span class="line-break">리디자인</span>
                   </h3>
                   <p class="work-slide-desc">
                     jQuery 없이, 최신 JavaScript를 사용하여 만든 관광지 소개
@@ -337,17 +337,17 @@
             <ul class="contact-links inner">
               <li class="contact-link">
                 <address>
-                  <strong class="portal-name">NAVER</strong>
                   <a href="mailto:isac1117@naver.com">
-                    isac1117&commat;naver.com
+                    <strong class="portal-name">NAVER</strong>
+                    <span>isac1117&commat;naver.com</span>
                   </a>
                 </address>
               </li>
               <li class="contact-link">
                 <address>
-                  <strong class="portal-name">GMAIL</strong>
                   <a href="mailto:dynamic1117@gmail.com">
-                    dynamic1117&commat;gmail.com
+                    <strong class="portal-name">GMAIL</strong>
+                    <span>dynamic1117&commat;gmail.com</span>
                   </a>
                 </address>
               </li>
@@ -356,7 +356,7 @@
         </main>
         <footer class="inner">
           <h2>Thank You!</h2>
-          <p>&copy; 이현성 2021</p>
+          <p>&copy; 이현성 2021~</p>
           <p>이 웹사이트는 상업적 목적이 아닙니다.</p>
           <button class="to-top-btn">
             <span class="blind">맨 처음으로 돌아가기</span>
@@ -364,6 +364,6 @@
         </footer>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
