@@ -1,14 +1,16 @@
 .navi {
+  visibility: hidden;
   position: fixed;
-  top: -12.6rem;
+  top: 12.6rem;
   left: 50%;
   opacity: 0;
-  transform: translateX(-50%);
+  transform: translate(-50%, -2rem);
   z-index: 50;
-  width: calc(100% - 2 * var(--inner-size));
+  width: calc(100% - 4rem);
   border-radius: 1.5rem;
   padding: 1.5rem 3rem;
-  background-color: var(--depth-300);
+  background-color: var(--navi-back);
+  backdrop-filter: blur(10px);
   .navi-items {
     display: flex;
     justify-content: space-between;
@@ -29,7 +31,7 @@
       }
     }
   }
-  .darkmode-toggle {
+  .theme {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,27 +42,39 @@
       margin-right: 1rem;
       font-size: 1.5rem;
     }
-    .toggle-icon {
+    &__toggle-icon {
       width: 4.8rem;
-      .toggle-body {
+      &__track {
         fill: transparent;
         stroke: currentColor;
         stroke-width: 0.4rem;
         transition: 150ms ease-out;
       }
-      .toggle-head {
+      &__head {
+        transition: 150ms ease-out;
         fill: var(--text-color-500);
       }
     }
 
-    .skell-toggle:checked ~ .toggle-icon {
+    &__skell:checked ~ .theme__toggle-icon {
       color: var(--theme-misty-yellow);
-      .toggle-body {
-        fill: var(--theme-misty-yellow);
+      .theme__toggle-icon__track {
+        fill: currentColor;
       }
-      .toggle-head {
-        transform: translateX(2.5rem);
+      .theme__toggle-icon__head {
+        transform: translate(2.4rem);
       }
     }
   }
+
+  transition: 150ms ease-out;
+  &--opened {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.header--filled .navi--opened {
+  top: 17.6rem;
 }

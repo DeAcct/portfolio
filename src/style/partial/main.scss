@@ -19,6 +19,7 @@ main {
     &::after {
       content: "";
       position: absolute;
+      z-index: -1;
       bottom: -6rem;
       width: 6rem;
       height: 6rem;

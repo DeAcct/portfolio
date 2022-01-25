@@ -1,3 +1,47 @@
-.contact {
-  height: 43.5rem;
+.contact-list {
+  background-color: var(--main-depth-300);
+  border-radius: 3rem;
+
+  &__item {
+    position: relative;
+    a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: {
+        top: 3rem;
+        bottom: 3rem;
+      }
+      .col-left {
+        display: flex;
+        flex-direction: column;
+      }
+      .col-right {
+        display: flex;
+      }
+    }
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__email {
+      font-size: 1.5rem;
+    }
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.8rem;
+      height: 4.8rem;
+      background-color: var(--depth-100);
+      border-radius: 50%;
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--main-depth-100);
+    }
+  }
 }
