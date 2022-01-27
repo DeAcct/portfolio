@@ -1,10 +1,10 @@
 .navi {
   visibility: hidden;
   position: fixed;
-  top: 12.6rem;
+  top: -12.6rem;
   left: 50%;
   opacity: 0;
-  transform: translate(-50%, -2rem);
+  transform: translateX(-50%);
   z-index: 50;
   width: calc(100% - 4rem);
   border-radius: 1.5rem;
@@ -67,14 +67,14 @@
     }
   }
 
-  transition: 150ms ease-out;
+  transition: 100ms ease-out;
   &--opened {
     visibility: visible;
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 25.6rem);
   }
 }
 
 .header--filled .navi--opened {
-  top: 17.6rem;
+  transform: translate(-50%, 30.6rem);
 }

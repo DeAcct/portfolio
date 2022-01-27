@@ -1,4 +1,37 @@
-footer {
-  height: 49.4rem;
+.footer {
+  padding: {
+    top: 10rem;
+    bottom: 5rem;
+  }
   background-color: var(--main-depth-100);
+  .wrap {
+    position: relative;
+    background-color: var(--main-depth-300);
+    border-radius: 3rem;
+    padding: 3.5rem 4.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top-btn {
+    position: absolute;
+    display: flex;
+    width: 7rem;
+    align-self: center;
+    top: -3.5rem;
+    .bg {
+      fill: var(--theme-misty-yellow);
+    }
+    .arrow {
+      fill: var(--text-color-500);
+    }
+  }
+  &__title {
+    font-family: "GongGothicBold";
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  &__copy {
+    font-size: 1.2rem;
+  }
 }
