@@ -15,9 +15,6 @@ const $naviOpenBtn = document.querySelector(
   ".navi-open-btn"
 ) as HTMLButtonElement;
 const $navi = document.querySelector(".navi") as HTMLElement;
-const $btnLine = $naviOpenBtn.querySelector(
-  ".navi-open-btn__line"
-) as HTMLSpanElement;
 $naviOpenBtn.addEventListener("click", () => {
   $navi.classList.toggle("navi--opened");
   $naviOpenBtn.classList.toggle("navi-open-btn--open");
