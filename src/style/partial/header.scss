@@ -16,6 +16,8 @@
     z-index: 60;
     height: 4.8rem;
     display: flex;
+    transition: opacity 150ms ease-out;
+
     .logo-mark {
       width: 4.8rem;
     }
@@ -24,6 +26,7 @@
       display: block;
       top: 50%;
       transform: translate(0, -50%);
+
       span {
         font-weight: 900;
         font-size: 1.3rem;
@@ -36,7 +39,7 @@
       }
     }
     &:hover,
-    & a:focus {
+    & a:focus-visible {
       opacity: 0.5;
     }
   }

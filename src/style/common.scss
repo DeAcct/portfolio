@@ -125,7 +125,8 @@ img {
 }
 
 :root {
-  --inner-size: 4.5rem;
+  --inner-size: 3.2rem;
+  --main-max-width: 1240px;
 }
 
 @media screen and (min-width: 1300px) {

@@ -1,15 +1,19 @@
 @use "profile";
 @use "works";
 @use "contact";
-main {
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--main-depth-100);
   padding-top: 8rem;
+  margin-top: -1px;
   .title {
     font-family: "GongGothicBold";
     font-size: 2rem;
     position: sticky;
     z-index: 50;
-    top: 9.6rem;
+    top: 9.5rem;
     padding: {
       top: 2rem;
       bottom: 2rem;
@@ -35,7 +39,10 @@ main {
       box-shadow: 3rem -3rem 0 var(--main-depth-100);
     }
   }
-  .main-contents:not(:first-child) {
-    margin-top: 6rem;
+  .main-contents {
+    width: min(100%, var(--main-max-width));
+    &:not(:first-child) {
+      margin-top: 6rem;
+    }
   }
 }

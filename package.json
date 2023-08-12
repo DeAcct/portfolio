@@ -4,13 +4,12 @@
   "homepage": "https://portfolio.hyse.kr",
   "scripts": {
     "dev": "vite",
-    "predeploy": "tsc && vite build && echo portfolio.hyse.kr > ./build/CNAME && echo CNAME created (portfolio.hyse.kr)",
-    "deploy": "gh-pages -d build",
+    "predeploy": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "typescript": "^4.5.5",
-    "vite": "^2.7.2"
+    "vite": "^4.4.9"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",

@@ -1,5 +1,5 @@
 @use "header";
-header {
+.header {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -40,14 +40,18 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 200%;
-    animation: 5s linear infinite wave-move;
-    fill: var(--main-depth-100);
+    width: 100dvw;
+    height: 70px;
+    background: {
+      image: url("src/assets/wave.svg");
+      repeat: repeat-x;
+    }
+    animation: wave-move 30s infinite linear;
   }
 }
 
 @keyframes wave-move {
   to {
-    transform: translateX(-50%);
+    background-position: -300%;
   }
 }
