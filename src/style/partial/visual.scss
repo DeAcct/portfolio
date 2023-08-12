@@ -43,7 +43,7 @@
     width: 100dvw;
     height: 70px;
     background: {
-      image: url("src/assets/wave.svg");
+      image: url("/src/assets/wave.svg");
       repeat: repeat-x;
     }
     animation: wave-move 30s infinite linear;
